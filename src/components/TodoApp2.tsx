@@ -38,7 +38,7 @@ function TodoApp2() {
     <div>
       <input onChange={handleChange} value={task} />
       <button onClick={handleClick}>Add</button>
-      <TaskCountLabel taskCount={taskCount} />
+      {/* <TaskCountLabel taskCount={taskCount} /> */}
       <ul>
         {tasks.map((t) => (
           <TodoItem key={t.id} task={t} onDelete={handleDelete} />
